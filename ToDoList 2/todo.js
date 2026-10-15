@@ -1,8 +1,6 @@
 const input = document.querySelector("input");
 const button = document.querySelector("button");
 const ul = document.querySelector("ul");
-const completed = document.class;
-// let x = 1
 
 console.log(input, button, ul);
 
@@ -25,7 +23,8 @@ button.addEventListener("click", () => {
     });
 
     newLi.addEventListener("click", () => {
-      newLi.className = "completed";
+      newLi.classList.toggle("completed");
+      console.log(newLi)
     });
 
   }
